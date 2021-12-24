@@ -1,0 +1,223 @@
+.collections {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+
+    .collection-main {
+        padding: 50px 25px;
+        box-sizing: border-box;
+        width: 56%;
+        height: 500px;
+        background-image: url('../../assets/images/Rectangle 35.png');
+        background-size: cover;
+        margin-right: 18px;
+
+        h2 {
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 26px;
+            color: #555555;
+            margin-bottom: 10px;
+        }
+        h3 {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 26px;
+            color: #7AC751;
+            margin-bottom: 13px;
+        }
+        .read {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            
+            span {
+                font-size: 16px;
+                line-height: 26px;
+                color: #757575;
+                margin-right: 5px;
+                width: 81px;
+                height: 26px;
+            }
+
+        }
+    }
+    .collection-item {
+        height: 500px;
+        width: 44%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+
+        
+        h2 {
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 28px;
+            color: #555555;
+            margin-bottom: 8px;
+        }
+        h3 {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 26px;
+            color: #7AC751;
+            margin-bottom: 9px;
+        }
+        .read {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            span {
+                font-size: 16px;
+                line-height: 26px;
+                color: #757575;
+                margin-right: 5px;
+            }
+        }
+        .item1 {
+            background-image: url('../../assets/images/Rectangle 34.png');
+            padding: 50px 25px;
+            box-sizing: border-box;
+            background-size: cover;
+            height: 240px;
+            width: 100%;
+        }
+        .item2 {
+            width: 100%;
+            height: 240px;
+            background-image: url('../../assets/images/Rectangle 33.png');
+            background-size: cover;
+            padding: 50px 25px;
+            box-sizing: border-box;
+        }
+    }
+}
+
+@media screen and(max-width: 992px) {
+    .collections {
+        margin-bottom: 100px;
+    
+        .collection-main {
+            padding: 42px 25px;
+            height: 400px;
+    
+            h2 {
+                font-size: 20px;
+                line-height: 20px;
+                margin-bottom: 8px;
+            }
+            h3 {
+                font-size: 17px;
+                line-height: 22px;
+                margin-bottom: 10px;
+            }
+            .read {
+                span {
+                    font-size: 13px;
+                    line-height: 20px;
+                    margin-right: 5px;
+                    width: 65px;
+                    height: 18px;
+                }
+    
+            }
+        }
+        .collection-item {
+            height: 400px;
+            width: 44%;
+            
+            h2 {
+                font-size: 18px;
+                line-height: 23px;
+                margin-bottom: 7px;
+            }
+            h3 {
+                font-size: 16px;
+                line-height: 20px;
+                margin-bottom: 7px;
+            }
+            .read {
+                span {
+                    font-size: 13px;
+                    line-height: 20px;
+                    margin-right: 5px;
+                }
+            }
+            .item1 {
+                padding: 40px 25px;
+                height: 195px;
+            }
+            .item2 {
+                height: 195px;
+                padding: 40px 25px;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 768px) {
+    .collections {
+        margin-bottom: 80px;
+    
+        .collection-main {
+            padding: 35px 16px;
+            width: 56%;
+            height: 350px;
+            margin-right: 12px;
+    
+            h2 {
+                font-size: 17px;
+                line-height: 18px;
+                margin-bottom: 6px;
+            }
+            h3 {
+                font-size: 14px;
+                line-height: 18px;
+                margin-bottom: 8px;
+            }
+            .read {
+                span {
+                    font-size: 11px;
+                    line-height: 18px;
+                    margin-right: 4px;
+                    width: 60px;
+                    height: 18px;
+                }
+    
+            }
+        }
+        .collection-item {
+            height: 350px;
+            width: 44%;
+            
+            h2 {
+                font-size: 16px;
+                line-height: 20px;
+                margin-bottom: 5px;
+            }
+            h3 {
+                font-size: 14px;
+                line-height: 18px;
+                margin-bottom: 5px;
+            }
+            .read {
+                span {
+                    font-size: 11px;
+                    line-height: 18px;
+                    margin-right: 4px;
+                }
+            }
+            .item1 {
+                padding: 35px 16px;
+                height: 170px;
+            }
+            .item2 {
+                height: 170px;
+                padding: 35px 16px;
+            }
+        }
+    }
+}
+

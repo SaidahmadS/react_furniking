@@ -1,23 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import Login from './containers/Login/Login';
+import Header from './containers/Header/Header';
+import Navbar from './containers/Navbar/Navbar';
+import SideBar from './containers/SideBar/SideBar';
+import Main from './containers/Main/Main';
+import Feature from './containers/Feature/Feature';
+import Collections from './containers/Collections/Collections';
+import Trending from './containers/Trending/Trending';
+import SpecialOffer from './containers/SpecialOffer/SpecialOffer';
+import OurProducts from './containers/OurProducts/OurProducts';
+import Customer from './containers/Customer/Customer';
+import Articles from './containers/Articles/Articles';
+import Footer from './containers/Footer/Footer';
+
+import './App.scss'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Login />
+      <Header />
+      <Navbar />
+      <div className="side-main">
+          <SideBar />
+          <Main />
+      </div>
+      <div className="container">
+        <Feature />
+        <Collections />
+        <Trending />
+        <SpecialOffer />
+        <OurProducts />
+        <Customer/>
+        <Articles/>
+        <Footer/>
+      </div>
+      <hr />
+      <p className='text-footer'>© 2021 Funking - All rights reserved.</p>
     </div>
   );
 }

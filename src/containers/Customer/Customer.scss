@@ -1,0 +1,138 @@
+.customer {
+    margin-bottom: 115px;
+    h1 {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 45px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #555555;
+        margin-bottom: 90px;
+    }
+    .persons {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+        .navigate-icon {
+            cursor: pointer;
+        }
+
+        .person {
+            background: #F8FAFB;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            border-radius: 8px;
+            text-align: center;
+            position: relative;
+            padding: 80px 125px 50px 125px;
+            
+            img {
+                width: 88px;
+                height: 88px;
+                object-fit: cover;
+                position: absolute;
+                border-radius: 50%;
+                top: -13%;
+                right: 45%;
+            }
+            p {
+                font-family: Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 150%;
+                color: #515151;
+                width: 566px;
+                margin: 0 auto;
+            }
+            h3 {
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 120%;
+                color: #555555;
+                margin-top: 32px;
+                margin-bottom: 8px;
+            }
+        }
+        .item-enter {
+            opacity: 0;
+            transition: all 1s ease;
+        }
+        .item-enter-active {
+          opacity: 1;
+        }
+        .item-exit {
+          position: absolute;
+          opacity: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .customer {
+        margin-bottom: 100px;
+        h1 {
+            font-size: 32px;
+            line-height: 38px;
+            margin-bottom: 70px;
+        }
+        .persons {
+            .person {
+                padding: 60px 85px 40px 85px;
+    
+                img {
+                    width: 65px;
+                    height: 65px;
+                }
+                p {
+                    font-size: 13px;
+                    line-height: 130%;
+                    width: 500px;
+                }
+                h3 {
+                    font-size: 21px;
+                    line-height: 110%;
+                    margin-top: 27px;
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .customer {
+        margin-bottom: 80px;
+        h1 {
+            font-size: 28px;
+            line-height: 35px;
+            margin-bottom: 60px;
+        }
+        .persons {
+            .person {
+                padding: 50px 75px 30px 75px;
+    
+                img {
+                    width: 55px;
+                    height: 55px;
+                    top: -13%;
+                    right: 45%;
+                }
+                p {
+                    font-size: 11px;
+                    line-height: 120%;
+                    width: 400px;
+                }
+                h3 {
+                    font-size: 19px;
+                    line-height: 100%;
+                    margin-top: 24px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+}
+
+

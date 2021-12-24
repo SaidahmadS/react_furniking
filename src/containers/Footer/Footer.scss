@@ -1,0 +1,217 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    .footer-left {
+        width: 27%;
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            span {
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 28px;
+                color: #555555;
+                margin-left: 5px;
+                margin-top: 3px;
+            }
+        }
+        p {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 32px;
+            color: #555555;
+            margin-bottom: 8px;
+        }
+        .networks {
+            display: flex;
+            align-items: center;
+            .network {
+                margin-right: 15px;
+                width: 32px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                cursor: pointer;
+                svg {
+                    fill: #555555;
+                }
+                &:hover {
+                    background-color: #555555;
+                    svg {
+                        fill: white;
+                    }
+                }
+            }
+        }
+    }
+    .footer-right {
+        width: 63%;
+        display: flex;
+        justify-content: space-between;
+        ul, li {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            a {
+                text-decoration: none;
+                display: block;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 40px;
+                letter-spacing: 0.01em;
+                color: #555555;
+                &:first-child {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer {
+        margin-bottom: 38px;
+        .footer-left {
+            width: 29%;
+    
+            .footer-logo {
+                margin-bottom: 14px;
+                svg {
+                    width: 28px;
+                    height: 34px;
+                }
+                span {
+                    font-size: 21px;
+                    line-height: 22px;
+                    margin-left: 5px;
+                    margin-top: 3px;
+                }
+            }
+            p {
+                font-size: 13px;
+                line-height: 22px;
+                margin-bottom: 6px;
+            }
+            .networks {
+                .network {
+                    margin-right: 12px;
+                    width: 28px;
+                    height: 28px;
+                }
+                .face {
+                    svg {
+                        width: 7px;
+                        height: 12px;
+                    }
+                }
+                .twit {
+                    svg {
+                        width: 12px;
+                        height: 10px;
+                    }
+                }
+                .insta {
+                    svg {
+                        width: 12px;
+                        height: 12px;
+                    }
+                }
+                .pinter {
+                    svg {
+                        width: 10px;
+                        height: 12px;
+                    }
+                }
+            }
+        }
+        .footer-right {
+            width: 61%;
+            ul, li {
+                a {
+                    font-size: 14px;
+                    line-height: 33px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        margin-bottom: 35px;
+        .footer-left {
+            width: 27%;
+    
+            .footer-logo {
+                margin-bottom: 10px;
+                svg {
+                    width: 25px;
+                    height: 30px;
+                }
+                span {
+                    font-size: 19px;
+                    line-height: 20px;
+                    margin-left: 4px;
+                    margin-top: 2.5px;
+                }
+            }
+            p {
+                font-size: 11px;
+                line-height: 22px;
+                margin-bottom: 5px;
+            }
+            .networks {
+                .network {
+                    margin-right: 10px;
+                    width: 24px;
+                    height: 24px;
+                    svg {
+                        fill: #555555;
+                    }
+                }
+                .face {
+                    svg {
+                        width: 5px;
+                        height: 10px;
+                    }
+                }
+                .twit {
+                    svg {
+                        width: 10px;
+                        height: 8px;
+                    }
+                }
+                .insta {
+                    svg {
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+                .pinter {
+                    svg {
+                        width: 8px;
+                        height: 10px;
+                    }
+                }
+            }
+        }
+        .footer-right {
+            width: 63%;
+            ul, li {
+                a {
+                    font-size: 12px;
+                    line-height: 31px;
+                }
+            }
+        }
+    }
+}
+

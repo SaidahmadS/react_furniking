@@ -1,0 +1,67 @@
+.wrapper {
+
+    .carouselItemRight {
+        position: absolute;
+        transform: translateX(38%);
+        transition: all ease 0.2s;
+        height: 330px;
+        opacity: 0;
+        top: 5%;
+    }
+
+    .carouselItemLeft {
+        position: absolute;
+        transform: translateX(-175%);
+        transition: all ease 0.2s;
+        height: 330px;
+        opacity: 0;
+        top: 5%;
+    }
+
+    .active {
+        position: absolute;
+        transition: all ease 0.7s;
+        transform: translateX(-62%);
+        height: 330px;
+        top: 5%;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .wrapper {
+        .carouselItemRight {
+            transform: translateX(55%);
+            height: 320px;
+        }
+    
+        .carouselItemLeft {
+            transform: translateX(-180%);
+            height: 320px;
+        }
+    
+        .active {
+            transform: translateX(-52%);
+            height: 320px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        .carouselItemRight {
+            transform: translateX(39%);
+            height: 280px;
+        }
+    
+        .carouselItemLeft {
+            transform: translateX(-170%);
+            height: 280px;
+        }
+    
+        .active {
+            transform: translateX(-60%);
+            height: 280px;
+        }
+    }
+}

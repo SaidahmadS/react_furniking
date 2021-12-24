@@ -1,0 +1,35 @@
+.sidebar-item {
+    border-bottom: 0.8px solid #E3E3E3;
+    width: 100%;
+
+    a {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.02em;
+        color: #555555;
+        text-decoration: none;
+        padding: 10px 30px;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .sidebar-item {
+        a {
+            font-size: 14px;
+            line-height: 16px;
+            padding: 9px 27px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar-item {
+        a {
+            font-size: 11px;
+            line-height: 14px;
+            padding: 7px 24px;
+        }
+    }
+}
+

@@ -1,0 +1,280 @@
+.main {
+    margin-top: 12px;
+    margin-left: 12px;
+    background: linear-gradient(103.4deg, rgba(241, 250, 255, 0.88) 0.89%, #F1FAFF 101.61%);
+    backdrop-filter: blur(155px);
+    border-radius: 1px;
+    padding: 36px 40px 22px 47px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+
+    .carouselImg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .hideLeft {
+            position: absolute;
+            width: 43%;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background: linear-gradient(103.4deg, rgba(241, 250, 255, 1) 0.89%, #F1FAFF 101.61%);
+            z-index: 9;
+        }
+    
+        .hideRight {
+            position: absolute;
+            top: 0;
+            width: 27%;
+            right: 0;
+            height: 100%;
+            background: linear-gradient(103.4deg, rgba(241, 250, 255, 1) 0.89%, #F1FAFF 101.61%);
+            z-index: 9;
+        }
+    }
+
+    .text {
+        position: relative;
+        z-index: 10;
+        h3 {
+            font-size: 22px;
+            line-height: 26px;
+            letter-spacing: 0.05em;
+            color: #7AC751;
+            margin-bottom: 6px;
+        }
+        h1 {
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 47px;
+            color: #2F2F2F;
+            margin-bottom: 30px;
+            width: 318px;
+        }
+        p{
+            font-weight: 600;
+            font-size: 27px;
+            line-height: 26px;
+            color: rgba(81, 81, 81, 0.71);
+            margin-bottom: 35px;
+        }
+        button {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+            background: #7AC751;
+            border-radius: 5px;
+            padding: 10px 18px;
+            border: none;
+            cursor: pointer;
+        }
+    }
+   
+    .imgCard {
+        position: relative;
+        z-index: 10;
+
+        .cardItem {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.56) 100%);
+            border: 2px solid #FFFFFF;
+            box-sizing: border-box;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 6px;
+            width: 98px;
+            cursor: pointer;
+
+            p {
+                font-weight: 500;
+                font-size: 7px;
+                line-height: 26px;
+                color: #7AC751;
+                margin: 0;
+                span {
+                    font-size: 12px;
+                    color: #7AC751;
+                }
+            }
+            h6 {
+                font-weight: 500;
+                font-size: 7px;
+                line-height: 26px;
+                color: #555555;
+                position: absolute;
+                bottom: -5px;
+                right: 0;
+                left: 0;
+            }
+        }
+    }
+    .spans {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        right: 35%;
+        bottom: 10px;  
+        .dot {
+            padding: 3px;
+            margin: 9px; 
+            cursor: pointer;
+
+            span {
+                width: 12px;
+                height: 12px;
+                background: rgba(122, 199, 81, 0.29);
+                display: inline-block;
+                border-radius: 50%;
+            }
+
+            .active {
+                background: #7AC751;
+                border-radius: 666px;
+                width: 24px;
+                height: 9px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .main {
+        width: 100%;
+        margin-left: 0;
+        padding-bottom: 50px;
+
+        .carouselImg {
+
+            .hideLeft {
+                width: 43%;
+            }
+        
+            .hideRight {
+                width: 26%;
+                right: 0;
+            }
+        }
+    
+        .text {
+            h3 {
+                font-size: 22px;
+                line-height: 20px;
+                margin-bottom: 10px;
+            }
+            h1 {
+                font-size: 37px;
+                line-height: 37px;
+                margin-bottom: 25px;
+                width: 300px;
+            }
+            p{
+                font-size: 24px;
+                line-height: 25px;
+                margin-bottom: 30px;
+            }
+            button {
+                font-size: 16px;
+                line-height: 18px;
+                padding: 10px 18px;
+            }
+        }
+
+        .imgCard {
+            margin-right: 20px;
+        }
+       
+        .spans {
+            right: 35%;
+            bottom: 7px;  
+            .dot {
+                padding: 3px;
+                margin: 7px; 
+    
+                span {
+                    width: 10px;
+                    height: 10px;
+                }
+    
+                .active {
+                    width: 20px;
+                    height: 7px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        padding: 36px 40px 20px 40px;
+
+        .carouselImg {
+
+            .hideLeft {
+                width: 43%;
+            }
+        
+            .hideRight {
+                width: 27%;
+            }
+        }
+    
+        .text {
+            h3 {
+                font-size: 18px;
+                line-height: 18px;
+                margin-bottom: 10px;
+            }
+            h1 {
+                font-size: 30px;
+                line-height: 34px;
+                margin-bottom: 20px;
+                width: 250px;
+            }
+            p{
+                font-size: 21px;
+                line-height: 22px;
+                margin-bottom: 30px;
+            }
+            button {
+                font-size: 16px;
+                line-height: 18px;
+                padding: 10px 18px;
+            }
+        }
+
+        .imgCard {
+            margin-right: 0;
+            .cardItem {
+                width: 80px;
+            }
+        }
+       
+        .spans {
+            right: 35%;
+            bottom: 7px;  
+            .dot {
+                padding: 3px;
+                margin: 5px; 
+    
+                span {
+                    width: 9px;
+                    height: 9px;
+                }
+    
+                .active {
+                    width: 18px;
+                    height: 6px;
+                }
+            }
+        }
+    }
+}
+

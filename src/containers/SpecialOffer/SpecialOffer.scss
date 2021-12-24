@@ -1,0 +1,268 @@
+.special-offer {
+    text-align: center;
+    margin-bottom: 120px;
+
+    h1 {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 45px;
+        text-transform: uppercase;
+        color: #555555;
+        margin-bottom: 60px;
+    }
+    .special-cards {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .special-card {
+            width: 48.5%;
+            height: 250px;
+            text-align: start;
+            padding: 28px 24px;
+            box-sizing: border-box;
+            position: relative;
+
+            .off {
+                position: absolute;
+                background: #00B7F1;
+                border-radius: 0px 0px 0 5px;
+                font-weight: 500;
+                font-size: 12px;
+                color: #FFFFFF;
+                padding: 5px 8px;
+                top: 0;
+                right: 0;
+            }
+
+            h3 {
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 28px;
+                color: #555555;
+                margin-bottom: 11px;    
+            }
+            p {
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 18px;
+                color: #757575;
+                margin-bottom: 20px;
+                width: 44%;
+            }
+            .shop-now {
+                display: flex;
+                align-items: center;
+                margin-bottom: 30px;
+
+                h4 {
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 120%;
+                    color: #7AC751;
+                }
+                .oldPrice {
+                    text-decoration-line: line-through;
+                    color: #CCCCCC;
+                    margin-left: 7px;
+                    margin-right: 20px;
+                }
+                button {
+                    background: #7AC751;
+                    border-radius: 2px;
+                    border: none;
+                    outline: none;
+                    font-weight: bold;
+                    font-size: 12px;
+                    color: #FFFFFF;
+                    padding: 7px 10px;
+                    cursor: pointer;
+                }
+            }
+            .times {
+                display: flex;
+
+                .date {
+                    margin-right: 18px;
+                    background: #7AC751;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    span {
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 120%;
+                        text-align: center;
+                        color: #FFFFFF;
+                        display: block;
+                    }
+                    .time {
+                        font-weight: normal;
+                        font-size: 6px;
+                        line-height: 120%;
+                        text-align: center;
+                        letter-spacing: 0.005em;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+        .card1 {
+            background-image: url('../../assets/images/Rectangle\ 43.png');
+        }
+        .card2 {
+            background-image: url('../../assets/images/Rectangle\ 44.png');
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .special-offer {
+        margin-bottom: 100px;
+    
+        h1 {
+            font-size: 32px;
+            line-height: 38px;
+            margin-bottom: 50px;
+        }
+        .special-cards {
+            .special-card {
+                width: 49%;
+                height: 200px;
+                padding: 25px 22px;
+                .off {
+                    font-size: 11px;
+                    padding: 5px 8px;
+                }
+    
+                h3 {
+                    font-size: 20px;
+                    line-height: 22px;
+                    margin-bottom: 10px;    
+                }
+                p {
+                    font-size: 10px;
+                    line-height: 14px;
+                    margin-bottom: 18px;
+                    width: 48%;
+                }
+                .shop-now {
+                    margin-bottom: 20px;
+    
+                    h4 {
+                        font-size: 14px;
+                        line-height: 110%;
+                    }
+                    .oldPrice {
+                        margin-left: 7px;
+                        margin-right: 18px;
+                    }
+                    button {
+                        font-size: 11px;
+                        padding: 7px 10px;
+                    }
+                }
+                .times {
+                    .date {
+                        margin-right: 14px;
+                        width: 35px;
+                        height: 35px;
+                        span {
+                            font-size: 12px;
+                            line-height: 110%;
+                        }
+                        .time {
+                            font-size: 6px;
+                            line-height: 110%;
+                        }
+                    }
+                }
+            }
+            .card1 {
+                background-size: cover;
+            }
+            .card2 {
+                background-size: cover;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .special-offer {
+        margin-bottom: 80px;
+    
+        h1 {
+            font-size: 28px;
+            line-height: 35px;
+            margin-bottom: 45px;
+        }
+        .special-cards {
+            .special-card {
+                width: 48.5%;
+                height: 180px;
+                padding: 20px 18px;
+                .off {
+                    font-size: 9px;
+                    padding: 3px 5px;
+                }
+    
+                h3 {
+                    font-size: 17px;
+                    line-height: 20px;
+                    margin-bottom: 8px;    
+                }
+                p {
+                    font-size: 8px;
+                    line-height: 12px;
+                    margin-bottom: 15px;
+                    width: 48%;
+                }
+                .shop-now {
+                    margin-bottom: 22px;
+    
+                    h4 {
+                        font-size: 12px;
+                        line-height: 100%;
+                    }
+                    .oldPrice {
+                        margin-left: 5px;
+                        margin-right: 15px;
+                    }
+                    button {
+                        font-size: 9px;
+                        padding: 5px 8px;
+                    }
+                }
+                .times {
+                    .date {
+                        margin-right: 12px;
+                        width: 30px;
+                        height: 30px;
+                        span {
+                            font-size: 10px;
+                            line-height: 100%;
+                        }
+                        .time {
+                            font-size: 5px;
+                            line-height: 100%;
+                        }
+                    }
+                }
+            }
+            .card1 {
+                background-size: cover;
+            }
+            .card2 {
+                background-size: cover;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,19 @@
+.sidebar {
+    background-color: #F7F8FA;
+    min-width: 290px;
+}
+
+@media screen and (max-width: 992px) {
+    .sidebar {
+        // min-width: 210px;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        // min-width: 180px;
+        display: none;
+    }
+}
+
